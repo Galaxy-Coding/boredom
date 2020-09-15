@@ -101,7 +101,7 @@ h1 {
 	</head>
 	<body>
 		<div id="container">
-			<p id="wut"><a href="javascript:(function(){window.s0=document.createElement('script');window.s0.setAttribute('type','text/javascript');window.s0.setAttribute('src','https://bookmarkify.it/bookmarklets/40685/raw');document.getElementsByTagName('body')[0].appendChild(window.s0);})();">Guess the number</a><p>
+			<p id="wut"><a href="javascript:(function()%7Bvar%20lowerLimit%20%3D%201%3B%0Avar%20upperLimit%20%3D%20prompt(%22Guess%20a%20number%201%20to...%22)%3B%0Avar%20tries%20%3D%201%3B%0Avar%20answer%20%3D%20Math.floor(Math.random()%20*%20(upperLimit%20-%20lowerLimit%20%2B%201))%20%2B%20lowerLimit%3B%0Avar%20guess%20%3D%20''%3B%0Awhile%20(tries%20%3E%200)%20%7B%0A%09%0Aguess%20%3D%20prompt('Try%20%23'%20%2B%20tries%20%2B%20'%5CnGuess%20a%20number%20between%20'%20%2B%20lowerLimit%20%2B%20'%20and%20'%20%2B%20upperLimit%20%2B%20'%3A'%0A%2C%20guess)%3B%0A%09%09%09%0A%09if%20(guess%20%3D%3D%20null)%20%7B%0A%09%09%09alert('Bye!%20The%20answer%20was%20'%20%2B%20answer)%3B%0A%09%09break%3B%0A%09%7D%0A%09if%20(guess%20%3D%3D%20NaN)%20%7B%0A%09%09alert('Bye!%20The%20answer%20was%20'%20%2B%20answer)%3B%0A%09%09break%3B%0A%09%7D%0A%09else%20if%20(isFinite(guess)%20%26%26%20guess%20!%3D%20'')%20%7B%0A%09%09guess%20%3D%20%2Bguess%3B%0A%09%09if%20(guess%20%3C%20lowerLimit)%20%7B%0A%09%09%09alert('Your%20guess%20should%20be%20no%20less%20than%20'%20%2B%20lowerLimit%20%2B%20'.')%3B%0A%09%09%7D%0A%09%09else%20if%20(guess%20%3E%20upperLimit)%20%7B%0A%09%09%09alert('Your%20guess%20should%20be%20no%20greater%20than%20'%20%2B%20upperLimit%20%2B%20'.')%3B%0A%09%09%7D%0A%09%09else%20if%20(guess%20%3E%20answer)%20%7B%0A%09%09%09alert('Your%20guess%20is%20too%20high.')%3B%0A%09%09%7D%0A%09%09else%20if%20(guess%20%3C%20answer)%20%7B%0A%09%09%09alert('Your%20guess%20is%20too%20low')%3B%0A%09%09%7D%0A%09%09else%20%7B%0A%09%09%09var%20listTries%20%3D%20tries%20%2B%201%3B%0A%09%09%09%09alert('Great%20job%2C%20you%20got%20'%20%2B%20answer%20%2B%20'%20in%20'%20%2B%20listTries%20%2B%20'%20tries!')%3B%0A%09%09%09break%3B%0A%09%09%7D%0A%09%7D%0A%09else%20%7B%0A%09%09alert('Bye!%20%5CnThe%20answer%20was%20'%20%2B%20answer)%3B%0A%09%09%09break%3B%0A%09%7D%0A%09%0A%09tries%20%3D%20tries%20%2B%201%3B%0Afunction%20GuessTheNumber()%7B%0A%7D%7D)()%3B">Guess the Number</a><p>
 			<p id="excuse">Drag the above link into your bookmarks or just click to play on this page.</p>
 		</div>
 		<div id="note">
@@ -111,7 +111,6 @@ h1 {
 			<p>Thanks to Google Fonts for Comfortaa, Google Search for HTML help, etc. etc.</p>
 			<p id="close">Click on 'Credits' again to close</p>
 		</div>
-		<p id="sig">Made by <a href="https://plus.google.com/u/0/101749103627562194088/">Sean</a></p>
 		<div id="white"></div>
 		<p id="help"><span id="elp">Credits</span></p>
 		<script type="text/javascript">
