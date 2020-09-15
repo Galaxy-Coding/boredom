@@ -1,4 +1,3 @@
-function GuessTheNumber(){
 var lowerLimit = 1;
 var upperLimit = prompt("Guess a number 1 to...");
 var tries = 1;
@@ -44,5 +43,4 @@ guess = prompt('Try #' + tries + '\nGuess a number between ' + lowerLimit + ' an
 	
 	tries = tries + 1;
 function GuessTheNumber(){
-}
 }
